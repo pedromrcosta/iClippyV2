@@ -10,7 +10,8 @@ class HotKeyManager {
     
     func registerHotKey() {
         var gMyHotKeyID = EventHotKeyID()
-        gMyHotKeyID.signature = OSType(('c' as UInt8, 'l' as UInt8, 'i' as UInt8, 'p' as UInt8))
+        // Using FourCC for "clip"
+        gMyHotKeyID.signature = 0x636C6970 // "clip" in ASCII hex
         gMyHotKeyID.id = 1
         
         // Option+V: keyCode 9 is 'V', optionKey modifier

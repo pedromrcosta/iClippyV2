@@ -127,7 +127,10 @@ final class DBManagerTests: XCTestCase {
     }
     
     func testOrderByMostRecent() {
-        // Add entries with slight delays to ensure different timestamps
+        // Add entries with slight delays to ensure different timestamps.
+        // Note: Using Thread.sleep here because timestamps are generated
+        // internally by DBManager. To avoid this, we'd need to inject
+        // a time provider into DBManager, which would complicate the API.
         dbManager.add(text: "First")
         Thread.sleep(forTimeInterval: 0.1)
         dbManager.add(text: "Second")

@@ -28,7 +28,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             object: nil
         )
         
-        print("Clippy started!")
+        print("iClippy started!")
         print("Database location: \(dbManager.databasePath())")
         print("Press Option+V to show clipboard history")
     }

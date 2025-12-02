@@ -4,25 +4,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "Clippy",
+    name: "iClippy",
     platforms: [
         .macOS(.v13)
     ],
     products: [
         .executable(
-            name: "Clippy",
-            targets: ["Clippy"])
+            name: "iClippy",
+            targets: ["iClippy"])
     ],
     targets: [
         .executableTarget(
-            name: "Clippy",
+            name: "iClippy",
             dependencies: [],
-            path: "Sources/Clippy"
+            path: "Sources/iClippy"
         ),
         .testTarget(
-            name: "ClippyTests",
-            dependencies: ["Clippy"],
-            path: "Tests/ClippyTests"
+            name: "iClippyTests",
+            dependencies: ["iClippy"],
+            path: "Tests/iClippyTests"
         )
     ]
 )

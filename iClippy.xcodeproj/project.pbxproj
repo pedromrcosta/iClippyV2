@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA0000010000000000000001 /* ClippyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000001 /* ClippyApp.swift */; };
+		AA0000010000000000000001 /* iClippyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000001 /* iClippyApp.swift */; };
 		AA0000010000000000000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000002 /* AppDelegate.swift */; };
 		AA0000010000000000000003 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000003 /* DBManager.swift */; };
 		AA0000010000000000000004 /* ClipboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000004 /* ClipboardMonitor.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB0000010000000000000001 /* ClippyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippyApp.swift; sourceTree = "<group>"; };
+		BB0000010000000000000001 /* iClippyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iClippyApp.swift; sourceTree = "<group>"; };
 		BB0000010000000000000002 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB0000010000000000000003 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		BB0000010000000000000004 /* ClipboardMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardMonitor.swift; sourceTree = "<group>"; };
@@ -25,8 +25,8 @@
 		BB0000010000000000000006 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		BB0000010000000000000007 /* DBManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManagerTests.swift; sourceTree = "<group>"; };
 		BB0000010000000000000008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC0000010000000000000001 /* Clippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC0000010000000000000002 /* ClippyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClippyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000010000000000000001 /* iClippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iClippy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000010000000000000002 /* iClippyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iClippyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 		EE0000010000000000000002 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EE0000010000000000000005 /* Clippy */,
+				EE0000010000000000000005 /* iClippy */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -67,7 +67,7 @@
 		EE0000010000000000000003 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				EE0000010000000000000006 /* ClippyTests */,
+				EE0000010000000000000006 /* iClippyTests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -75,16 +75,16 @@
 		EE0000010000000000000004 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC0000010000000000000001 /* Clippy.app */,
-				CC0000010000000000000002 /* ClippyTests.xctest */,
+				CC0000010000000000000001 /* iClippy.app */,
+				CC0000010000000000000002 /* iClippyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EE0000010000000000000005 /* Clippy */ = {
+		EE0000010000000000000005 /* iClippy */ = {
 			isa = PBXGroup;
 			children = (
-				BB0000010000000000000001 /* ClippyApp.swift */,
+				BB0000010000000000000001 /* iClippyApp.swift */,
 				BB0000010000000000000002 /* AppDelegate.swift */,
 				BB0000010000000000000003 /* DBManager.swift */,
 				BB0000010000000000000004 /* ClipboardMonitor.swift */,
@@ -92,23 +92,23 @@
 				BB0000010000000000000006 /* HistoryView.swift */,
 				BB0000010000000000000008 /* Info.plist */,
 			);
-			path = Clippy;
+			path = iClippy;
 			sourceTree = "<group>";
 		};
-		EE0000010000000000000006 /* ClippyTests */ = {
+		EE0000010000000000000006 /* iClippyTests */ = {
 			isa = PBXGroup;
 			children = (
 				BB0000010000000000000007 /* DBManagerTests.swift */,
 			);
-			path = ClippyTests;
+			path = iClippyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF0000010000000000000001 /* Clippy */ = {
+		FF0000010000000000000001 /* iClippy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF0000010000000000000003 /* Build configuration list for PBXNativeTarget "Clippy" */;
+			buildConfigurationList = FF0000010000000000000003 /* Build configuration list for PBXNativeTarget "iClippy" */;
 			buildPhases = (
 				FF0000010000000000000004 /* Sources */,
 				DD0000010000000000000001 /* Frameworks */,
@@ -118,14 +118,14 @@
 			);
 			dependencies = (
 			);
-			name = Clippy;
-			productName = Clippy;
-			productReference = CC0000010000000000000001 /* Clippy.app */;
+			name = iClippy;
+			productName = iClippy;
+			productReference = CC0000010000000000000001 /* iClippy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FF0000010000000000000002 /* ClippyTests */ = {
+		FF0000010000000000000002 /* iClippyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF0000010000000000000006 /* Build configuration list for PBXNativeTarget "ClippyTests" */;
+			buildConfigurationList = FF0000010000000000000006 /* Build configuration list for PBXNativeTarget "iClippyTests" */;
 			buildPhases = (
 				FF0000010000000000000007 /* Sources */,
 				DD0000010000000000000002 /* Frameworks */,
@@ -134,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = ClippyTests;
-			productName = ClippyTests;
-			productReference = CC0000010000000000000002 /* ClippyTests.xctest */;
+			name = iClippyTests;
+			productName = iClippyTests;
+			productReference = CC0000010000000000000002 /* iClippyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +158,7 @@
 					};
 				};
 			};
-			buildConfigurationList = GG0000010000000000000002 /* Build configuration list for PBXProject "Clippy" */;
+			buildConfigurationList = GG0000010000000000000002 /* Build configuration list for PBXProject "iClippy" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,8 +171,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF0000010000000000000001 /* Clippy */,
-				FF0000010000000000000002 /* ClippyTests */,
+				FF0000010000000000000001 /* iClippy */,
+				FF0000010000000000000002 /* iClippyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,7 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0000010000000000000001 /* ClippyApp.swift in Sources */,
+				AA0000010000000000000001 /* iClippyApp.swift in Sources */,
 				AA0000010000000000000002 /* AppDelegate.swift in Sources */,
 				AA0000010000000000000003 /* DBManager.swift in Sources */,
 				AA0000010000000000000004 /* ClipboardMonitor.swift in Sources */,
@@ -342,7 +342,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Sources/Clippy/Info.plist;
+				INFOPLIST_FILE = Sources/iClippy/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -353,7 +353,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.clippy.macos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iclippy.macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -372,7 +372,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Sources/Clippy/Info.plist;
+				INFOPLIST_FILE = Sources/iClippy/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -383,7 +383,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.clippy.macos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iclippy.macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -400,11 +400,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.clippy.macos.ClippyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iclippy.macos.iClippyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clippy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Clippy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iClippy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iClippy";
 			};
 			name = Debug;
 		};
@@ -418,18 +418,18 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.clippy.macos.ClippyTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iclippy.macos.iClippyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clippy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Clippy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iClippy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iClippy";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		GG0000010000000000000002 /* Build configuration list for PBXProject "Clippy" */ = {
+		GG0000010000000000000002 /* Build configuration list for PBXProject "iClippy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				HH0000010000000000000001 /* Debug */,
@@ -438,7 +438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF0000010000000000000003 /* Build configuration list for PBXNativeTarget "Clippy" */ = {
+		FF0000010000000000000003 /* Build configuration list for PBXNativeTarget "iClippy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				HH0000010000000000000003 /* Debug */,
@@ -447,7 +447,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF0000010000000000000006 /* Build configuration list for PBXNativeTarget "ClippyTests" */ = {
+		FF0000010000000000000006 /* Build configuration list for PBXNativeTarget "iClippyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				HH0000010000000000000005 /* Debug */,

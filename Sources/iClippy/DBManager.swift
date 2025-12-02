@@ -16,12 +16,12 @@ class DBManager {
     /// Create a default manager using Application Support directory
     static func defaultManager() -> DBManager {
         let appSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-        let clippyDir = appSupport.appendingPathComponent("Clippy")
+        let clippyDir = appSupport.appendingPathComponent("iClippy")
         
         // Create directory if it doesn't exist
         try? FileManager.default.createDirectory(at: clippyDir, withIntermediateDirectories: true)
         
-        let dbPath = clippyDir.appendingPathComponent("clippy.sqlite3").path
+        let dbPath = clippyDir.appendingPathComponent("iclippy.sqlite3").path
         return DBManager(databasePath: dbPath)
     }
     

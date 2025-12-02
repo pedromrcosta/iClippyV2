@@ -1,4 +1,4 @@
-# Clippy - macOS Clipboard History
+# iClippy - macOS Clipboard History
 
 A lightweight macOS clipboard history manager that records text clipboard items into a local SQLite database and provides quick access via a global hotkey.
 
@@ -27,11 +27,11 @@ git clone https://github.com/pedromrcosta/iClippyV2.git
 cd iClippyV2
 
 # Open the Xcode project
-open Clippy.xcodeproj
+open iClippy.xcodeproj
 ```
 
 In Xcode:
-1. Select the "Clippy" scheme
+1. Select the "iClippy" scheme
 2. Press `⌘B` to build or `⌘R` to run
 3. The app will appear in the menu bar when running
 
@@ -46,22 +46,22 @@ cd iClippyV2
 swift build -c release
 
 # Run the app
-.build/release/Clippy
+.build/release/iClippy
 ```
 
 ## Usage
 
-1. **Start the app**: Launch Clippy - it runs in the background monitoring your clipboard
-2. **Copy text**: Copy any text as usual (⌘C) - Clippy automatically records it
+1. **Start the app**: Launch iClippy - it runs in the background monitoring your clipboard
+2. **Copy text**: Copy any text as usual (⌘C) - iClippy automatically records it
 3. **View history**: Press `Option+V` (⌥V) to open the history window
 4. **Search**: Type in the search field to filter entries
 5. **Restore**: Click any entry to copy it back to your clipboard
 
 ## Database Location
 
-Clippy stores clipboard history in:
+iClippy stores clipboard history in:
 ```
-~/Library/Application Support/Clippy/clippy.sqlite3
+~/Library/Application Support/iClippy/iclippy.sqlite3
 ```
 
 You can backup or copy this file between machines to migrate your clipboard history.

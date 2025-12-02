@@ -1,5 +1,5 @@
 import XCTest
-@testable import Clippy
+@testable import iClippy
 
 final class DBManagerTests: XCTestCase {
     var dbManager: DBManager!
@@ -9,7 +9,7 @@ final class DBManagerTests: XCTestCase {
         super.setUp()
         // Create a temporary database file for testing
         let tempDir = FileManager.default.temporaryDirectory
-        tempDBPath = tempDir.appendingPathComponent("test_clippy_\(UUID().uuidString).sqlite3").path
+        tempDBPath = tempDir.appendingPathComponent("test_iclippy_\(UUID().uuidString).sqlite3").path
         dbManager = DBManager(databasePath: tempDBPath)
     }
     
@@ -122,8 +122,8 @@ final class DBManagerTests: XCTestCase {
         let path = defaultManager.databasePath()
         
         XCTAssertTrue(path.contains("Application Support"))
-        XCTAssertTrue(path.contains("Clippy"))
-        XCTAssertTrue(path.hasSuffix("clippy.sqlite3"))
+        XCTAssertTrue(path.contains("iClippy"))
+        XCTAssertTrue(path.hasSuffix("iclippy.sqlite3"))
     }
     
     func testOrderByMostRecent() {

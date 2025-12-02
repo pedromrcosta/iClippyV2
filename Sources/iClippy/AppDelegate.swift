@@ -40,6 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc private func toggleHistoryWindow() {
         if let panel = historyPanel, panel.isVisible {
+            print("[DEBUG] Closing clipboard history window")
             panel.orderOut(nil)
             historyPanel = nil
         } else {
@@ -48,6 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     private func showHistoryWindow() {
+        print("[DEBUG] Showing clipboard history window")
         // Create SwiftUI view with view model
         let viewModel = HistoryViewModel(dbManager: dbManager)
         let historyView = HistoryView(viewModel: viewModel)

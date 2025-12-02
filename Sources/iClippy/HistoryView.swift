@@ -22,6 +22,7 @@ class HistoryViewModel: ObservableObject {
     }
     
     func copyToClipboard(text: String) {
+        print("[DEBUG] Selected clipboard item: \(text.prefix(50))\(text.count > 50 ? "..." : "")")
         let pasteboard = NSPasteboard.general
         pasteboard.clearContents()
         pasteboard.setString(text, forType: .string)

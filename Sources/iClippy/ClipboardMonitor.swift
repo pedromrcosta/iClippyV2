@@ -40,6 +40,7 @@ class ClipboardMonitor {
         if let text = pasteboard.string(forType: .string) {
             let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
             if !trimmed.isEmpty {
+                print("[DEBUG] New clipboard copy detected: \(trimmed.prefix(50))\(trimmed.count > 50 ? "..." : "")")
                 dbManager.add(text: trimmed)
             }
         }

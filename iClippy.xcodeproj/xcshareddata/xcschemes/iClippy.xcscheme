@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FF0000010000000000000001"
-               BuildableName = "Clippy.app"
-               BlueprintName = "Clippy"
-               ReferencedContainer = "container:Clippy.xcodeproj">
+               BuildableName = "iClippy.app"
+               BlueprintName = "iClippy"
+               ReferencedContainer = "container:iClippy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FF0000010000000000000002"
-               BuildableName = "ClippyTests.xctest"
-               BlueprintName = "ClippyTests"
-               ReferencedContainer = "container:Clippy.xcodeproj">
+               BuildableName = "iiClippyTests.xctest"
+               BlueprintName = "iiClippyTests"
+               ReferencedContainer = "container:iClippy.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF0000010000000000000001"
-            BuildableName = "Clippy.app"
-            BlueprintName = "Clippy"
-            ReferencedContainer = "container:Clippy.xcodeproj">
+            BuildableName = "iClippy.app"
+            BlueprintName = "iClippy"
+            ReferencedContainer = "container:iClippy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -73,9 +73,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FF0000010000000000000001"
-            BuildableName = "Clippy.app"
-            BlueprintName = "Clippy"
-            ReferencedContainer = "container:Clippy.xcodeproj">
+            BuildableName = "iClippy.app"
+            BlueprintName = "iClippy"
+            ReferencedContainer = "container:iClippy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

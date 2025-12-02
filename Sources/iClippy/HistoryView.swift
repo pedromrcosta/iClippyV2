@@ -71,16 +71,27 @@ struct HistoryView: View {
                     Spacer()
                 }
             } else {
-                List {
-                    ForEach(viewModel.entries) { entry in
-                        EntryRow(entry: entry)
-                            .onTapGesture {
-                                viewModel.copyToClipboard(text: entry.text)
-                                dismiss()
+                ScrollViewReader { proxy in
+                    List {
+                        ForEach(viewModel.entries) { entry in
+                            EntryRow(entry: entry)
+                                .onTapGesture {
+                                    viewModel.copyToClipboard(text: entry.text)
+                                    dismiss()
+                                }
+                                .id(entry.id)
+                        }
+                    }
+                    .listStyle(.plain)
+                    .onChange(of: viewModel.searchQuery) { _ in
+                        // Scroll to top when search query changes
+                        if let firstEntry = viewModel.entries.first {
+                            withAnimation {
+                                proxy.scrollTo(firstEntry.id, anchor: .top)
                             }
+                        }
                     }
                 }
-                .listStyle(.plain)
             }
         }
         .frame(width: 600, height: 400)

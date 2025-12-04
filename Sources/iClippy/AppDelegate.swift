@@ -85,6 +85,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         panel.contentView = hostingView
         panel.isFloatingPanel = true
         panel.level = .floating
+        
+        // Set window identifiers to fix "Cannot index window tabs" warning
+        panel.tabbingMode = .disallowed
+        panel.tabbingIdentifier = "com.iclippy.macos.historyPanel"
+        panel.identifier = NSUserInterfaceItemIdentifier("com.iclippy.macos.historyPanel")
+        panel.frameAutosaveName = "iClippyHistoryPanelFrame"
+        
         panel.center()
         panel.makeKeyAndOrderFront(nil)
         
